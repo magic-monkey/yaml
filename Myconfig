@@ -1,0 +1,2527 @@
+---
+port: 8888
+socks-port: 8889
+mixed-port: 8899
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:6170
+experimental:
+  ignore-resolve-fail: true
+clash-for-android:
+  ui-subtitle-pattern: "[一-龥]{2,4}"
+proxies:
+- name: "\U0001F1ED\U0001F1F0 As丨香港04丨原生丨中繼"
+  type: ssr
+  server: wjfagn9kae.hurricaneelectricinternetservices.cyou
+  port: 400
+  cipher: aes-256-cfb
+  password: V2efLnR3SJZr
+  obfs: http_simple
+  protocol: auth_aes128_sha1
+  obfs-param: ba9aa308947.microsoft.com
+  protocol-param: 308947:CFNoV4
+  udp: false
+- name: "\U0001F1ED\U0001F1F0 As丨香港05丨原生丨中繼"
+  type: ssr
+  server: wjfagn9kae.hurricaneelectricinternetservices.cyou
+  port: 401
+  cipher: aes-256-cfb
+  password: V2efLnR3SJZr
+  obfs: http_simple
+  protocol: auth_aes128_sha1
+  obfs-param: ba9aa308947.microsoft.com
+  protocol-param: 308947:CFNoV4
+  udp: false
+- name: "\U0001F1ED\U0001F1F0 As丨香港08丨原生丨專線"
+  type: ssr
+  server: fr9rle2tqh.hurricaneelectricinternetservices.cyou
+  port: 9527
+  cipher: aes-256-cfb
+  password: V2efLnR3SJZr
+  obfs: http_simple
+  protocol: auth_aes128_sha1
+  obfs-param: ba9aa308947.microsoft.com
+  protocol-param: 308947:CFNoV4
+  udp: false
+- name: "\U0001F1FA\U0001F1F8 Na丨美國01丨原生丨中繼"
+  type: ssr
+  server: wjfagn9kae.hurricaneelectricinternetservices.cyou
+  port: 406
+  cipher: aes-256-cfb
+  password: V2efLnR3SJZr
+  obfs: http_simple
+  protocol: auth_aes128_sha1
+  obfs-param: ba9aa308947.microsoft.com
+  protocol-param: 308947:CFNoV4
+  udp: false
+- name: "\U0001F1FA\U0001F1F8 Na丨美國03丨原生丨中繼"
+  type: ssr
+  server: wjfagn9kae.hurricaneelectricinternetservices.cyou
+  port: 38941
+  cipher: aes-256-cfb
+  password: V2efLnR3SJZr
+  obfs: http_simple
+  protocol: auth_aes128_sha1
+  obfs-param: ba9aa308947.microsoft.com
+  protocol-param: 308947:CFNoV4
+  udp: false
+- name: "\U0001F1FA\U0001F1F8 Na丨美國05丨原生丨中繼"
+  type: ssr
+  server: wjfagn9kae.hurricaneelectricinternetservices.cyou
+  port: 1643
+  cipher: aes-256-cfb
+  password: V2efLnR3SJZr
+  obfs: http_simple
+  protocol: auth_aes128_sha1
+  obfs-param: ba9aa308947.microsoft.com
+  protocol-param: 308947:CFNoV4
+  udp: false
+- name: "\U0001F1FA\U0001F1F8 Na丨美國06丨原生丨中繼"
+  type: ssr
+  server: wjfagn9kae.hurricaneelectricinternetservices.cyou
+  port: 1644
+  cipher: aes-256-cfb
+  password: V2efLnR3SJZr
+  obfs: http_simple
+  protocol: auth_aes128_sha1
+  obfs-param: ba9aa308947.microsoft.com
+  protocol-param: 308947:CFNoV4
+  udp: false
+- name: "\U0001F1E8\U0001F1F3 台湾 BGP 01"
+  type: trojan
+  server: 47.99.141.58
+  port: 258
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 台湾 BGP 02"
+  type: trojan
+  server: 47.99.142.28
+  port: 258
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 台湾 BGP 03"
+  type: trojan
+  server: 120.79.39.85
+  port: 258
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 台湾 CHT 01"
+  type: trojan
+  server: 61.221.57.35
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 台湾 CHT 02"
+  type: trojan
+  server: 61.216.166.234
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 台湾 CHT 03"
+  type: trojan
+  server: 61.221.155.7
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 台湾 CHT 04"
+  type: trojan
+  server: 61.221.155.8
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 台湾 CHT 05"
+  type: trojan
+  server: 61.221.155.9
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 台湾 CHT 06"
+  type: trojan
+  server: 211.21.92.115
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 台湾 NTT"
+  type: trojan
+  server: 103.152.221.188
+  port: 443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 台湾 Seed"
+  type: trojan
+  server: seed1.qiangdong.xyz
+  port: 443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E8\U0001F1F3 台湾 TFN"
+  type: trojan
+  server: 175.98.194.132
+  port: 443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E9\U0001F1EA 德国 BGP 02"
+  type: trojan
+  server: 47.99.142.28
+  port: 758
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E9\U0001F1EA 德国 GIA 01"
+  type: trojan
+  server: degia1.qiangdong.xyz
+  port: 443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E9\U0001F1EA 德国 GIA 02"
+  type: trojan
+  server: degia2.qiangdong.xyz
+  port: 443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E9\U0001F1EA 德国 NTT"
+  type: trojan
+  server: 95.179.169.11
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F8\U0001F1EC 新加坡 AGA 01"
+  type: trojan
+  server: a58a7d8c597662772.awsglobalaccelerator.com
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F8\U0001F1EC 新加坡 AGA 02"
+  type: trojan
+  server: a440e03791e556e94.awsglobalaccelerator.com
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F8\U0001F1EC 新加坡 BGP 01"
+  type: trojan
+  server: 47.99.141.58
+  port: 458
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F8\U0001F1EC 新加坡 BGP 02"
+  type: trojan
+  server: 47.99.142.28
+  port: 458
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F8\U0001F1EC 新加坡 BGP 03"
+  type: trojan
+  server: 120.79.39.85
+  port: 458
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F8\U0001F1EC 新加坡 NTT 01"
+  type: trojan
+  server: 103.142.140.199
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F8\U0001F1EC 新加坡 NTT 02"
+  type: trojan
+  server: 103.142.140.198
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F8\U0001F1EC 新加坡 NTT 03"
+  type: trojan
+  server: 103.142.140.197
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F8\U0001F1EC 新加坡 NTT 04"
+  type: trojan
+  server: 103.142.140.178
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F8\U0001F1EC 新加坡 NTT 05"
+  type: trojan
+  server: 103.142.140.179
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 日本 AGA 01"
+  type: trojan
+  server: acf552613ec918b2b.awsglobalaccelerator.com
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 日本 AGA 02"
+  type: trojan
+  server: a0e267725e3594c7c.awsglobalaccelerator.com
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 日本 BGP 01"
+  type: trojan
+  server: 47.99.141.58
+  port: 358
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 日本 BGP 02"
+  type: trojan
+  server: 47.99.142.28
+  port: 358
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 日本 BGP 03"
+  type: trojan
+  server: 120.79.39.85
+  port: 358
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 日本 IIJ 01"
+  type: trojan
+  server: 198.144.166.57
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 日本 IIJ 02"
+  type: trojan
+  server: 198.144.166.48
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 日本 IIJ 03"
+  type: trojan
+  server: 198.144.166.45
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 日本 KDDI"
+  type: trojan
+  server: 180.235.234.68
+  port: 443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 日本 NTT 01"
+  type: trojan
+  server: 45.76.194.14
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 日本 NTT 02"
+  type: trojan
+  server: 45.76.195.78
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EF\U0001F1F5 日本 NTT 03"
+  type: trojan
+  server: 45.32.252.142
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1E6\U0001F1FA 澳大利亚 AWS"
+  type: trojan
+  server: 3.104.36.12
+  port: 443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F2\U0001F1F4 澳门 CTM 01"
+  type: trojan
+  server: ctm1.0tk8a3a1q4t94dler.com
+  port: 443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 美国 Azure"
+  type: trojan
+  server: 13.66.191.60
+  port: 443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 美国 BGP 01"
+  type: trojan
+  server: 47.99.141.58
+  port: 558
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 美国 BGP 02"
+  type: trojan
+  server: 47.99.142.28
+  port: 558
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 美国 BGP 03"
+  type: trojan
+  server: 120.79.39.85
+  port: 558
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 美国 GIA"
+  type: trojan
+  server: 154.17.0.20
+  port: 443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 美国 NTT 01"
+  type: trojan
+  server: 136.175.176.161
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 美国 NTT 02"
+  type: trojan
+  server: 136.175.176.191
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1FA\U0001F1F8 美国 NTT 03"
+  type: trojan
+  server: 136.175.176.195
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EC\U0001F1E7 英国 BGP 01"
+  type: trojan
+  server: 47.99.141.58
+  port: 858
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EC\U0001F1E7 英国 BGP 02"
+  type: trojan
+  server: 47.99.142.28
+  port: 858
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EC\U0001F1E7 英国 Cogent"
+  type: trojan
+  server: 185.237.99.105
+  port: 636
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1EC\U0001F1E7 英国 NTT"
+  type: trojan
+  server: 45.76.129.28
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F5\U0001F1ED 菲律宾 ETPI"
+  type: trojan
+  server: 120.89.61.199
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F0\U0001F1F7 韩国 BGP 01"
+  type: trojan
+  server: 47.99.141.58
+  port: 658
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F0\U0001F1F7 韩国 BGP 02"
+  type: trojan
+  server: 47.99.142.28
+  port: 658
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F0\U0001F1F7 韩国 BGP 03"
+  type: trojan
+  server: 120.79.39.85
+  port: 658
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F0\U0001F1F7 韩国 KT 01"
+  type: trojan
+  server: 211.43.15.85
+  port: 443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F0\U0001F1F7 韩国 KT 02"
+  type: trojan
+  server: 211.43.15.86
+  port: 443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F0\U0001F1F7 韩国 NTT 01"
+  type: trojan
+  server: 158.247.203.234
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F0\U0001F1F7 韩国 NTT 02"
+  type: trojan
+  server: 141.164.53.200
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1F0\U0001F1F7 韩国 NTT 03"
+  type: trojan
+  server: 158.247.220.33
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 AGA 01"
+  type: trojan
+  server: a89ecb8caac0f653c.awsglobalaccelerator.com
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 AGA 02"
+  type: trojan
+  server: a16673f313915d0ad.awsglobalaccelerator.com
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 AGA 03"
+  type: trojan
+  server: a558ff7d3c778fabc.awsglobalaccelerator.com
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 AGA 04"
+  type: trojan
+  server: a3c12ddf3dff92f0e.awsglobalaccelerator.com
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 Azure 01"
+  type: trojan
+  server: azurehk1.0tk8a3a1q4t94dler.com
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 Azure 02"
+  type: trojan
+  server: azurehk2.0tk8a3a1q4t94dler.com
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 BGP 01"
+  type: trojan
+  server: 47.99.141.58
+  port: 158
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 BGP 02"
+  type: trojan
+  server: 47.99.142.28
+  port: 158
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 BGP 03"
+  type: trojan
+  server: 120.79.39.85
+  port: 158
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 HE 01"
+  type: trojan
+  server: 103.16.27.35
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 HE 02"
+  type: trojan
+  server: 103.16.26.129
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 HGC 01"
+  type: trojan
+  server: hgc1.qiangdong.xyz
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 HGC 02"
+  type: trojan
+  server: hgc2.qiangdong.xyz
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 HKBN"
+  type: trojan
+  server: hkbn1.qiangdong.xyz
+  port: 443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 HKT 01"
+  type: trojan
+  server: pccw1.qiangdong.xyz
+  port: 443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 HKT 02"
+  type: trojan
+  server: pccw2.qiangdong.xyz
+  port: 443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 HKT 03"
+  type: trojan
+  server: pccw3.qiangdong.xyz
+  port: 443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 HKT 04"
+  type: trojan
+  server: pccw4.qiangdong.xyz
+  port: 443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 HKT 05"
+  type: trojan
+  server: pccw5.qiangdong.xyz
+  port: 443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 HKT 06"
+  type: trojan
+  server: pccw6.qiangdong.xyz
+  port: 443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 IEPL 01"
+  type: trojan
+  server: 14.17.97.139
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 IEPL 02"
+  type: trojan
+  server: 14.17.97.141
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 IEPL 03"
+  type: trojan
+  server: 14.17.97.142
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 IEPL 04"
+  type: trojan
+  server: 14.17.97.143
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 NTT 01"
+  type: trojan
+  server: 103.135.249.22
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 NTT 02"
+  type: trojan
+  server: 103.135.249.25
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 NTT 03"
+  type: trojan
+  server: 103.135.249.30
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 NTT 04"
+  type: trojan
+  server: 103.135.249.35
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 NTT 05"
+  type: trojan
+  server: 103.135.248.171
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 NTT 06"
+  type: trojan
+  server: 103.138.74.59
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 NTT 07"
+  type: trojan
+  server: 103.138.74.69
+  port: 8443
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: "\U0001F1ED\U0001F1F0 香港 WTT"
+  type: trojan
+  server: wtt1.qiangdong.xyz
+  port: 636
+  password: fc48194800.wns.windows.com
+  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+proxy-groups:
+- name: Proxy
+  type: select
+  proxies:
+  - Auto - UrlTest
+  - DIRECT
+  - "\U0001F1ED\U0001F1F0 As丨香港04丨原生丨中繼"
+  - "\U0001F1ED\U0001F1F0 As丨香港05丨原生丨中繼"
+  - "\U0001F1ED\U0001F1F0 As丨香港08丨原生丨專線"
+  - "\U0001F1FA\U0001F1F8 Na丨美國01丨原生丨中繼"
+  - "\U0001F1FA\U0001F1F8 Na丨美國03丨原生丨中繼"
+  - "\U0001F1FA\U0001F1F8 Na丨美國05丨原生丨中繼"
+  - "\U0001F1FA\U0001F1F8 Na丨美國06丨原生丨中繼"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 01"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 02"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 03"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 01"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 02"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 03"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 04"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 05"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 06"
+  - "\U0001F1E8\U0001F1F3 台湾 NTT"
+  - "\U0001F1E8\U0001F1F3 台湾 Seed"
+  - "\U0001F1E8\U0001F1F3 台湾 TFN"
+  - "\U0001F1E9\U0001F1EA 德国 BGP 02"
+  - "\U0001F1E9\U0001F1EA 德国 GIA 01"
+  - "\U0001F1E9\U0001F1EA 德国 GIA 02"
+  - "\U0001F1E9\U0001F1EA 德国 NTT"
+  - "\U0001F1F8\U0001F1EC 新加坡 AGA 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 AGA 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 03"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 03"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 04"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 05"
+  - "\U0001F1EF\U0001F1F5 日本 AGA 01"
+  - "\U0001F1EF\U0001F1F5 日本 AGA 02"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 01"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 02"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 03"
+  - "\U0001F1EF\U0001F1F5 日本 IIJ 01"
+  - "\U0001F1EF\U0001F1F5 日本 IIJ 02"
+  - "\U0001F1EF\U0001F1F5 日本 IIJ 03"
+  - "\U0001F1EF\U0001F1F5 日本 KDDI"
+  - "\U0001F1EF\U0001F1F5 日本 NTT 01"
+  - "\U0001F1EF\U0001F1F5 日本 NTT 02"
+  - "\U0001F1EF\U0001F1F5 日本 NTT 03"
+  - "\U0001F1E6\U0001F1FA 澳大利亚 AWS"
+  - "\U0001F1F2\U0001F1F4 澳门 CTM 01"
+  - "\U0001F1FA\U0001F1F8 美国 Azure"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 01"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 02"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 03"
+  - "\U0001F1FA\U0001F1F8 美国 GIA"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 01"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 02"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 03"
+  - "\U0001F1EC\U0001F1E7 英国 BGP 01"
+  - "\U0001F1EC\U0001F1E7 英国 BGP 02"
+  - "\U0001F1EC\U0001F1E7 英国 Cogent"
+  - "\U0001F1EC\U0001F1E7 英国 NTT"
+  - "\U0001F1F5\U0001F1ED 菲律宾 ETPI"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 01"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 02"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 03"
+  - "\U0001F1F0\U0001F1F7 韩国 KT 01"
+  - "\U0001F1F0\U0001F1F7 韩国 KT 02"
+  - "\U0001F1F0\U0001F1F7 韩国 NTT 01"
+  - "\U0001F1F0\U0001F1F7 韩国 NTT 02"
+  - "\U0001F1F0\U0001F1F7 韩国 NTT 03"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 01"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 02"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 03"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 04"
+  - "\U0001F1ED\U0001F1F0 香港 Azure 01"
+  - "\U0001F1ED\U0001F1F0 香港 Azure 02"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 01"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 02"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 03"
+  - "\U0001F1ED\U0001F1F0 香港 HE 01"
+  - "\U0001F1ED\U0001F1F0 香港 HE 02"
+  - "\U0001F1ED\U0001F1F0 香港 HGC 01"
+  - "\U0001F1ED\U0001F1F0 香港 HGC 02"
+  - "\U0001F1ED\U0001F1F0 香港 HKBN"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 01"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 02"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 03"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 04"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 05"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 06"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 01"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 02"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 03"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 04"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 01"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 02"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 03"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 04"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 05"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 06"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 07"
+  - "\U0001F1ED\U0001F1F0 香港 WTT"
+- name: Domestic
+  type: select
+  proxies:
+  - DIRECT
+  - Proxy
+- name: Others
+  type: select
+  proxies:
+  - Proxy
+  - DIRECT
+  - Domestic
+  - "\U0001F1ED\U0001F1F0 As丨香港04丨原生丨中繼"
+  - "\U0001F1ED\U0001F1F0 As丨香港05丨原生丨中繼"
+  - "\U0001F1ED\U0001F1F0 As丨香港08丨原生丨專線"
+  - "\U0001F1FA\U0001F1F8 Na丨美國01丨原生丨中繼"
+  - "\U0001F1FA\U0001F1F8 Na丨美國03丨原生丨中繼"
+  - "\U0001F1FA\U0001F1F8 Na丨美國05丨原生丨中繼"
+  - "\U0001F1FA\U0001F1F8 Na丨美國06丨原生丨中繼"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 01"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 02"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 03"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 01"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 02"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 03"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 04"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 05"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 06"
+  - "\U0001F1E8\U0001F1F3 台湾 NTT"
+  - "\U0001F1E8\U0001F1F3 台湾 Seed"
+  - "\U0001F1E8\U0001F1F3 台湾 TFN"
+  - "\U0001F1E9\U0001F1EA 德国 BGP 02"
+  - "\U0001F1E9\U0001F1EA 德国 GIA 01"
+  - "\U0001F1E9\U0001F1EA 德国 GIA 02"
+  - "\U0001F1E9\U0001F1EA 德国 NTT"
+  - "\U0001F1F8\U0001F1EC 新加坡 AGA 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 AGA 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 03"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 03"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 04"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 05"
+  - "\U0001F1EF\U0001F1F5 日本 AGA 01"
+  - "\U0001F1EF\U0001F1F5 日本 AGA 02"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 01"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 02"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 03"
+  - "\U0001F1EF\U0001F1F5 日本 IIJ 01"
+  - "\U0001F1EF\U0001F1F5 日本 IIJ 02"
+  - "\U0001F1EF\U0001F1F5 日本 IIJ 03"
+  - "\U0001F1EF\U0001F1F5 日本 KDDI"
+  - "\U0001F1EF\U0001F1F5 日本 NTT 01"
+  - "\U0001F1EF\U0001F1F5 日本 NTT 02"
+  - "\U0001F1EF\U0001F1F5 日本 NTT 03"
+  - "\U0001F1E6\U0001F1FA 澳大利亚 AWS"
+  - "\U0001F1F2\U0001F1F4 澳门 CTM 01"
+  - "\U0001F1FA\U0001F1F8 美国 Azure"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 01"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 02"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 03"
+  - "\U0001F1FA\U0001F1F8 美国 GIA"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 01"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 02"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 03"
+  - "\U0001F1EC\U0001F1E7 英国 BGP 01"
+  - "\U0001F1EC\U0001F1E7 英国 BGP 02"
+  - "\U0001F1EC\U0001F1E7 英国 Cogent"
+  - "\U0001F1EC\U0001F1E7 英国 NTT"
+  - "\U0001F1F5\U0001F1ED 菲律宾 ETPI"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 01"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 02"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 03"
+  - "\U0001F1F0\U0001F1F7 韩国 KT 01"
+  - "\U0001F1F0\U0001F1F7 韩国 KT 02"
+  - "\U0001F1F0\U0001F1F7 韩国 NTT 01"
+  - "\U0001F1F0\U0001F1F7 韩国 NTT 02"
+  - "\U0001F1F0\U0001F1F7 韩国 NTT 03"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 01"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 02"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 03"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 04"
+  - "\U0001F1ED\U0001F1F0 香港 Azure 01"
+  - "\U0001F1ED\U0001F1F0 香港 Azure 02"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 01"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 02"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 03"
+  - "\U0001F1ED\U0001F1F0 香港 HE 01"
+  - "\U0001F1ED\U0001F1F0 香港 HE 02"
+  - "\U0001F1ED\U0001F1F0 香港 HGC 01"
+  - "\U0001F1ED\U0001F1F0 香港 HGC 02"
+  - "\U0001F1ED\U0001F1F0 香港 HKBN"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 01"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 02"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 03"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 04"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 05"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 06"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 01"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 02"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 03"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 04"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 01"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 02"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 03"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 04"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 05"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 06"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 07"
+  - "\U0001F1ED\U0001F1F0 香港 WTT"
+- name: YouTube
+  type: select
+  proxies:
+  - 🇭🇰 香港节点
+  - Proxy
+  - DIRECT
+  - "\U0001F1ED\U0001F1F0 As丨香港04丨原生丨中繼"
+  - "\U0001F1ED\U0001F1F0 As丨香港05丨原生丨中繼"
+  - "\U0001F1ED\U0001F1F0 As丨香港08丨原生丨專線"
+  - "\U0001F1FA\U0001F1F8 美国 Azure"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 01"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 02"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 03"
+  - "\U0001F1FA\U0001F1F8 美国 GIA"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 01"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 02"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 03"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 01"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 02"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 03"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 04"
+  - "\U0001F1ED\U0001F1F0 香港 Azure 01"
+  - "\U0001F1ED\U0001F1F0 香港 Azure 02"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 01"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 02"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 03"
+  - "\U0001F1ED\U0001F1F0 香港 HE 01"
+  - "\U0001F1ED\U0001F1F0 香港 HE 02"
+  - "\U0001F1ED\U0001F1F0 香港 HGC 01"
+  - "\U0001F1ED\U0001F1F0 香港 HGC 02"
+  - "\U0001F1ED\U0001F1F0 香港 HKBN"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 01"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 02"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 03"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 04"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 05"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 06"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 01"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 02"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 03"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 04"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 01"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 02"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 03"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 04"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 05"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 06"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 07"
+  - "\U0001F1ED\U0001F1F0 香港 WTT"
+- name: Netflix
+  type: select
+  proxies:
+  - 🇺🇲 美国节点
+  - 🇭🇰 香港节点
+- name: AdBlock
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+  - Proxy
+- name: Apple
+  type: select
+  proxies:
+  - 🇭🇰 香港节点
+  - DIRECT
+  - Proxy
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 01"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 02"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 03"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 01"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 02"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 03"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 04"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 05"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 06"
+  - "\U0001F1E8\U0001F1F3 台湾 NTT"
+  - "\U0001F1E8\U0001F1F3 台湾 Seed"
+  - "\U0001F1E8\U0001F1F3 台湾 TFN"
+  - "\U0001F1E9\U0001F1EA 德国 BGP 02"
+  - "\U0001F1E9\U0001F1EA 德国 GIA 01"
+  - "\U0001F1E9\U0001F1EA 德国 GIA 02"
+  - "\U0001F1E9\U0001F1EA 德国 NTT"
+  - "\U0001F1F8\U0001F1EC 新加坡 AGA 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 AGA 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 03"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 03"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 04"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 05"
+  - "\U0001F1EF\U0001F1F5 日本 AGA 01"
+  - "\U0001F1EF\U0001F1F5 日本 AGA 02"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 01"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 02"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 03"
+  - "\U0001F1EF\U0001F1F5 日本 IIJ 01"
+  - "\U0001F1EF\U0001F1F5 日本 IIJ 02"
+  - "\U0001F1EF\U0001F1F5 日本 IIJ 03"
+  - "\U0001F1EF\U0001F1F5 日本 KDDI"
+  - "\U0001F1EF\U0001F1F5 日本 NTT 01"
+  - "\U0001F1EF\U0001F1F5 日本 NTT 02"
+  - "\U0001F1EF\U0001F1F5 日本 NTT 03"
+  - "\U0001F1E6\U0001F1FA 澳大利亚 AWS"
+  - "\U0001F1F2\U0001F1F4 澳门 CTM 01"
+  - "\U0001F1FA\U0001F1F8 美国 Azure"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 01"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 02"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 03"
+  - "\U0001F1FA\U0001F1F8 美国 GIA"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 01"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 02"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 03"
+  - "\U0001F1EC\U0001F1E7 英国 BGP 01"
+  - "\U0001F1EC\U0001F1E7 英国 BGP 02"
+  - "\U0001F1EC\U0001F1E7 英国 Cogent"
+  - "\U0001F1EC\U0001F1E7 英国 NTT"
+  - "\U0001F1F5\U0001F1ED 菲律宾 ETPI"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 01"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 02"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 03"
+  - "\U0001F1F0\U0001F1F7 韩国 KT 01"
+  - "\U0001F1F0\U0001F1F7 韩国 KT 02"
+  - "\U0001F1F0\U0001F1F7 韩国 NTT 01"
+  - "\U0001F1F0\U0001F1F7 韩国 NTT 02"
+  - "\U0001F1F0\U0001F1F7 韩国 NTT 03"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 01"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 02"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 03"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 04"
+  - "\U0001F1ED\U0001F1F0 香港 Azure 01"
+  - "\U0001F1ED\U0001F1F0 香港 Azure 02"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 01"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 02"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 03"
+  - "\U0001F1ED\U0001F1F0 香港 HE 01"
+  - "\U0001F1ED\U0001F1F0 香港 HE 02"
+  - "\U0001F1ED\U0001F1F0 香港 HGC 01"
+  - "\U0001F1ED\U0001F1F0 香港 HGC 02"
+  - "\U0001F1ED\U0001F1F0 香港 HKBN"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 01"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 02"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 03"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 04"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 05"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 06"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 01"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 02"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 03"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 04"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 01"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 02"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 03"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 04"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 05"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 06"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 07"
+  - "\U0001F1ED\U0001F1F0 香港 WTT"
+- name: Scholar
+  type: select
+  proxies:
+  - DIRECT
+  - Proxy
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 01"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 02"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 03"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 01"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 02"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 03"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 04"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 05"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 06"
+  - "\U0001F1E8\U0001F1F3 台湾 NTT"
+  - "\U0001F1E8\U0001F1F3 台湾 Seed"
+  - "\U0001F1E8\U0001F1F3 台湾 TFN"
+  - "\U0001F1E9\U0001F1EA 德国 BGP 02"
+  - "\U0001F1E9\U0001F1EA 德国 GIA 01"
+  - "\U0001F1E9\U0001F1EA 德国 GIA 02"
+  - "\U0001F1E9\U0001F1EA 德国 NTT"
+  - "\U0001F1F8\U0001F1EC 新加坡 AGA 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 AGA 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 03"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 03"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 04"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 05"
+  - "\U0001F1EF\U0001F1F5 日本 AGA 01"
+  - "\U0001F1EF\U0001F1F5 日本 AGA 02"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 01"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 02"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 03"
+  - "\U0001F1EF\U0001F1F5 日本 IIJ 01"
+  - "\U0001F1EF\U0001F1F5 日本 IIJ 02"
+  - "\U0001F1EF\U0001F1F5 日本 IIJ 03"
+  - "\U0001F1EF\U0001F1F5 日本 KDDI"
+  - "\U0001F1EF\U0001F1F5 日本 NTT 01"
+  - "\U0001F1EF\U0001F1F5 日本 NTT 02"
+  - "\U0001F1EF\U0001F1F5 日本 NTT 03"
+  - "\U0001F1E6\U0001F1FA 澳大利亚 AWS"
+  - "\U0001F1F2\U0001F1F4 澳门 CTM 01"
+  - "\U0001F1FA\U0001F1F8 美国 Azure"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 01"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 02"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 03"
+  - "\U0001F1FA\U0001F1F8 美国 GIA"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 01"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 02"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 03"
+  - "\U0001F1EC\U0001F1E7 英国 BGP 01"
+  - "\U0001F1EC\U0001F1E7 英国 BGP 02"
+  - "\U0001F1EC\U0001F1E7 英国 Cogent"
+  - "\U0001F1EC\U0001F1E7 英国 NTT"
+  - "\U0001F1F5\U0001F1ED 菲律宾 ETPI"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 01"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 02"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 03"
+  - "\U0001F1F0\U0001F1F7 韩国 KT 01"
+  - "\U0001F1F0\U0001F1F7 韩国 KT 02"
+  - "\U0001F1F0\U0001F1F7 韩国 NTT 01"
+  - "\U0001F1F0\U0001F1F7 韩国 NTT 02"
+  - "\U0001F1F0\U0001F1F7 韩国 NTT 03"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 01"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 02"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 03"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 04"
+  - "\U0001F1ED\U0001F1F0 香港 Azure 01"
+  - "\U0001F1ED\U0001F1F0 香港 Azure 02"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 01"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 02"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 03"
+  - "\U0001F1ED\U0001F1F0 香港 HE 01"
+  - "\U0001F1ED\U0001F1F0 香港 HE 02"
+  - "\U0001F1ED\U0001F1F0 香港 HGC 01"
+  - "\U0001F1ED\U0001F1F0 香港 HGC 02"
+  - "\U0001F1ED\U0001F1F0 香港 HKBN"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 01"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 02"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 03"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 04"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 05"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 06"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 01"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 02"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 03"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 04"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 01"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 02"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 03"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 04"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 05"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 06"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 07"
+  - "\U0001F1ED\U0001F1F0 香港 WTT"
+- name: AsianTV
+  type: select
+  proxies:
+  - DIRECT
+  - Domestic
+  - Proxy
+  - "\U0001F1ED\U0001F1F0 As丨香港04丨原生丨中繼"
+  - "\U0001F1ED\U0001F1F0 As丨香港05丨原生丨中繼"
+  - "\U0001F1ED\U0001F1F0 As丨香港08丨原生丨專線"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 01"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 02"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 03"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 01"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 02"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 03"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 04"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 05"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 06"
+  - "\U0001F1E8\U0001F1F3 台湾 NTT"
+  - "\U0001F1E8\U0001F1F3 台湾 Seed"
+  - "\U0001F1E8\U0001F1F3 台湾 TFN"
+  - "\U0001F1F2\U0001F1F4 澳门 CTM 01"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 01"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 02"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 03"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 04"
+  - "\U0001F1ED\U0001F1F0 香港 Azure 01"
+  - "\U0001F1ED\U0001F1F0 香港 Azure 02"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 01"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 02"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 03"
+  - "\U0001F1ED\U0001F1F0 香港 HE 01"
+  - "\U0001F1ED\U0001F1F0 香港 HE 02"
+  - "\U0001F1ED\U0001F1F0 香港 HGC 01"
+  - "\U0001F1ED\U0001F1F0 香港 HGC 02"
+  - "\U0001F1ED\U0001F1F0 香港 HKBN"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 01"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 02"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 03"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 04"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 05"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 06"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 01"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 02"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 03"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 04"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 01"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 02"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 03"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 04"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 05"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 06"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 07"
+  - "\U0001F1ED\U0001F1F0 香港 WTT"
+- name: GlobalTV
+  type: select
+  proxies:
+  - 🇭🇰 香港节点
+  - 🇺🇲 美国节点
+  - Proxy
+  - DIRECT
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 01"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 02"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 03"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 01"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 02"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 03"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 04"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 05"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 06"
+  - "\U0001F1E8\U0001F1F3 台湾 NTT"
+  - "\U0001F1E8\U0001F1F3 台湾 Seed"
+  - "\U0001F1E8\U0001F1F3 台湾 TFN"
+  - "\U0001F1E9\U0001F1EA 德国 BGP 02"
+  - "\U0001F1E9\U0001F1EA 德国 GIA 01"
+  - "\U0001F1E9\U0001F1EA 德国 GIA 02"
+  - "\U0001F1E9\U0001F1EA 德国 NTT"
+  - "\U0001F1F8\U0001F1EC 新加坡 AGA 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 AGA 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 03"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 03"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 04"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 05"
+  - "\U0001F1EF\U0001F1F5 日本 AGA 01"
+  - "\U0001F1EF\U0001F1F5 日本 AGA 02"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 01"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 02"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 03"
+  - "\U0001F1EF\U0001F1F5 日本 IIJ 01"
+  - "\U0001F1EF\U0001F1F5 日本 IIJ 02"
+  - "\U0001F1EF\U0001F1F5 日本 IIJ 03"
+  - "\U0001F1EF\U0001F1F5 日本 KDDI"
+  - "\U0001F1EF\U0001F1F5 日本 NTT 01"
+  - "\U0001F1EF\U0001F1F5 日本 NTT 02"
+  - "\U0001F1EF\U0001F1F5 日本 NTT 03"
+  - "\U0001F1E6\U0001F1FA 澳大利亚 AWS"
+  - "\U0001F1F2\U0001F1F4 澳门 CTM 01"
+  - "\U0001F1FA\U0001F1F8 美国 Azure"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 01"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 02"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 03"
+  - "\U0001F1FA\U0001F1F8 美国 GIA"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 01"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 02"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 03"
+  - "\U0001F1EC\U0001F1E7 英国 BGP 01"
+  - "\U0001F1EC\U0001F1E7 英国 BGP 02"
+  - "\U0001F1EC\U0001F1E7 英国 Cogent"
+  - "\U0001F1EC\U0001F1E7 英国 NTT"
+  - "\U0001F1F5\U0001F1ED 菲律宾 ETPI"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 01"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 02"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 03"
+  - "\U0001F1F0\U0001F1F7 韩国 KT 01"
+  - "\U0001F1F0\U0001F1F7 韩国 KT 02"
+  - "\U0001F1F0\U0001F1F7 韩国 NTT 01"
+  - "\U0001F1F0\U0001F1F7 韩国 NTT 02"
+  - "\U0001F1F0\U0001F1F7 韩国 NTT 03"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 01"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 02"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 03"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 04"
+  - "\U0001F1ED\U0001F1F0 香港 Azure 01"
+  - "\U0001F1ED\U0001F1F0 香港 Azure 02"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 01"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 02"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 03"
+  - "\U0001F1ED\U0001F1F0 香港 HE 01"
+  - "\U0001F1ED\U0001F1F0 香港 HE 02"
+  - "\U0001F1ED\U0001F1F0 香港 HGC 01"
+  - "\U0001F1ED\U0001F1F0 香港 HGC 02"
+  - "\U0001F1ED\U0001F1F0 香港 HKBN"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 01"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 02"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 03"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 04"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 05"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 06"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 01"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 02"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 03"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 04"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 01"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 02"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 03"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 04"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 05"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 06"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 07"
+  - "\U0001F1ED\U0001F1F0 香港 WTT"
+- name: Spotify
+  type: select
+  proxies:
+  - Proxy
+  - DIRECT
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 01"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 02"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 03"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 01"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 02"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 03"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 04"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 05"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 06"
+  - "\U0001F1E8\U0001F1F3 台湾 NTT"
+  - "\U0001F1E8\U0001F1F3 台湾 Seed"
+  - "\U0001F1E8\U0001F1F3 台湾 TFN"
+  - "\U0001F1E9\U0001F1EA 德国 BGP 02"
+  - "\U0001F1E9\U0001F1EA 德国 GIA 01"
+  - "\U0001F1E9\U0001F1EA 德国 GIA 02"
+  - "\U0001F1E9\U0001F1EA 德国 NTT"
+  - "\U0001F1F8\U0001F1EC 新加坡 AGA 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 AGA 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 03"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 03"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 04"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 05"
+  - "\U0001F1EF\U0001F1F5 日本 AGA 01"
+  - "\U0001F1EF\U0001F1F5 日本 AGA 02"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 01"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 02"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 03"
+  - "\U0001F1EF\U0001F1F5 日本 IIJ 01"
+  - "\U0001F1EF\U0001F1F5 日本 IIJ 02"
+  - "\U0001F1EF\U0001F1F5 日本 IIJ 03"
+  - "\U0001F1EF\U0001F1F5 日本 KDDI"
+  - "\U0001F1EF\U0001F1F5 日本 NTT 01"
+  - "\U0001F1EF\U0001F1F5 日本 NTT 02"
+  - "\U0001F1EF\U0001F1F5 日本 NTT 03"
+  - "\U0001F1E6\U0001F1FA 澳大利亚 AWS"
+  - "\U0001F1F2\U0001F1F4 澳门 CTM 01"
+  - "\U0001F1FA\U0001F1F8 美国 Azure"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 01"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 02"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 03"
+  - "\U0001F1FA\U0001F1F8 美国 GIA"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 01"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 02"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 03"
+  - "\U0001F1EC\U0001F1E7 英国 BGP 01"
+  - "\U0001F1EC\U0001F1E7 英国 BGP 02"
+  - "\U0001F1EC\U0001F1E7 英国 Cogent"
+  - "\U0001F1EC\U0001F1E7 英国 NTT"
+  - "\U0001F1F5\U0001F1ED 菲律宾 ETPI"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 01"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 02"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 03"
+  - "\U0001F1F0\U0001F1F7 韩国 KT 01"
+  - "\U0001F1F0\U0001F1F7 韩国 KT 02"
+  - "\U0001F1F0\U0001F1F7 韩国 NTT 01"
+  - "\U0001F1F0\U0001F1F7 韩国 NTT 02"
+  - "\U0001F1F0\U0001F1F7 韩国 NTT 03"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 01"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 02"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 03"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 04"
+  - "\U0001F1ED\U0001F1F0 香港 Azure 01"
+  - "\U0001F1ED\U0001F1F0 香港 Azure 02"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 01"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 02"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 03"
+  - "\U0001F1ED\U0001F1F0 香港 HE 01"
+  - "\U0001F1ED\U0001F1F0 香港 HE 02"
+  - "\U0001F1ED\U0001F1F0 香港 HGC 01"
+  - "\U0001F1ED\U0001F1F0 香港 HGC 02"
+  - "\U0001F1ED\U0001F1F0 香港 HKBN"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 01"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 02"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 03"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 04"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 05"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 06"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 01"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 02"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 03"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 04"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 01"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 02"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 03"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 04"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 05"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 06"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 07"
+  - "\U0001F1ED\U0001F1F0 香港 WTT"
+- name: Disney
+  type: select
+  proxies:
+  - 🇺🇲 美国节点
+  - "\U0001F1FA\U0001F1F8 Na丨美國01丨原生丨中繼"
+  - "\U0001F1FA\U0001F1F8 Na丨美國03丨原生丨中繼"
+  - "\U0001F1FA\U0001F1F8 Na丨美國05丨原生丨中繼"
+  - "\U0001F1FA\U0001F1F8 Na丨美國06丨原生丨中繼"
+  - "\U0001F1FA\U0001F1F8 美国 Azure"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 01"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 02"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 03"
+  - "\U0001F1FA\U0001F1F8 美国 GIA"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 01"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 02"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 03"
+- name: Telegram
+  type: select
+  proxies:
+  - 🇭🇰 香港节点
+  - Proxy
+  - DIRECT
+- name: Steam
+  type: select
+  proxies:
+  - Proxy
+  - DIRECT
+- name: Speedtest
+  type: select
+  proxies:
+  - Proxy
+  - DIRECT
+  - Domestic
+- name: PayPal
+  type: select
+  proxies:
+  - DIRECT
+  - Proxy
+  - Domestic
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 01"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 02"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 03"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 01"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 02"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 03"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 04"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 05"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 06"
+  - "\U0001F1E8\U0001F1F3 台湾 NTT"
+  - "\U0001F1E8\U0001F1F3 台湾 Seed"
+  - "\U0001F1E8\U0001F1F3 台湾 TFN"
+  - "\U0001F1E9\U0001F1EA 德国 BGP 02"
+  - "\U0001F1E9\U0001F1EA 德国 GIA 01"
+  - "\U0001F1E9\U0001F1EA 德国 GIA 02"
+  - "\U0001F1E9\U0001F1EA 德国 NTT"
+  - "\U0001F1F8\U0001F1EC 新加坡 AGA 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 AGA 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 03"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 03"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 04"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 05"
+  - "\U0001F1EF\U0001F1F5 日本 AGA 01"
+  - "\U0001F1EF\U0001F1F5 日本 AGA 02"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 01"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 02"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 03"
+  - "\U0001F1EF\U0001F1F5 日本 IIJ 01"
+  - "\U0001F1EF\U0001F1F5 日本 IIJ 02"
+  - "\U0001F1EF\U0001F1F5 日本 IIJ 03"
+  - "\U0001F1EF\U0001F1F5 日本 KDDI"
+  - "\U0001F1EF\U0001F1F5 日本 NTT 01"
+  - "\U0001F1EF\U0001F1F5 日本 NTT 02"
+  - "\U0001F1EF\U0001F1F5 日本 NTT 03"
+  - "\U0001F1E6\U0001F1FA 澳大利亚 AWS"
+  - "\U0001F1F2\U0001F1F4 澳门 CTM 01"
+  - "\U0001F1FA\U0001F1F8 美国 Azure"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 01"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 02"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 03"
+  - "\U0001F1FA\U0001F1F8 美国 GIA"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 01"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 02"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 03"
+  - "\U0001F1EC\U0001F1E7 英国 BGP 01"
+  - "\U0001F1EC\U0001F1E7 英国 BGP 02"
+  - "\U0001F1EC\U0001F1E7 英国 Cogent"
+  - "\U0001F1EC\U0001F1E7 英国 NTT"
+  - "\U0001F1F5\U0001F1ED 菲律宾 ETPI"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 01"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 02"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 03"
+  - "\U0001F1F0\U0001F1F7 韩国 KT 01"
+  - "\U0001F1F0\U0001F1F7 韩国 KT 02"
+  - "\U0001F1F0\U0001F1F7 韩国 NTT 01"
+  - "\U0001F1F0\U0001F1F7 韩国 NTT 02"
+  - "\U0001F1F0\U0001F1F7 韩国 NTT 03"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 01"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 02"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 03"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 04"
+  - "\U0001F1ED\U0001F1F0 香港 Azure 01"
+  - "\U0001F1ED\U0001F1F0 香港 Azure 02"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 01"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 02"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 03"
+  - "\U0001F1ED\U0001F1F0 香港 HE 01"
+  - "\U0001F1ED\U0001F1F0 香港 HE 02"
+  - "\U0001F1ED\U0001F1F0 香港 HGC 01"
+  - "\U0001F1ED\U0001F1F0 香港 HGC 02"
+  - "\U0001F1ED\U0001F1F0 香港 HKBN"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 01"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 02"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 03"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 04"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 05"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 06"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 01"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 02"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 03"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 04"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 01"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 02"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 03"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 04"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 05"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 06"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 07"
+  - "\U0001F1ED\U0001F1F0 香港 WTT"
+- name: Microsoft
+  type: select
+  proxies:
+  - Proxy
+  - DIRECT
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 01"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 02"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 03"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 01"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 02"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 03"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 04"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 05"
+  - "\U0001F1E8\U0001F1F3 台湾 CHT 06"
+  - "\U0001F1E8\U0001F1F3 台湾 NTT"
+  - "\U0001F1E8\U0001F1F3 台湾 Seed"
+  - "\U0001F1E8\U0001F1F3 台湾 TFN"
+  - "\U0001F1E9\U0001F1EA 德国 BGP 02"
+  - "\U0001F1E9\U0001F1EA 德国 GIA 01"
+  - "\U0001F1E9\U0001F1EA 德国 GIA 02"
+  - "\U0001F1E9\U0001F1EA 德国 NTT"
+  - "\U0001F1F8\U0001F1EC 新加坡 AGA 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 AGA 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 03"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 03"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 04"
+  - "\U0001F1F8\U0001F1EC 新加坡 NTT 05"
+  - "\U0001F1EF\U0001F1F5 日本 AGA 01"
+  - "\U0001F1EF\U0001F1F5 日本 AGA 02"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 01"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 02"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 03"
+  - "\U0001F1EF\U0001F1F5 日本 IIJ 01"
+  - "\U0001F1EF\U0001F1F5 日本 IIJ 02"
+  - "\U0001F1EF\U0001F1F5 日本 IIJ 03"
+  - "\U0001F1EF\U0001F1F5 日本 KDDI"
+  - "\U0001F1EF\U0001F1F5 日本 NTT 01"
+  - "\U0001F1EF\U0001F1F5 日本 NTT 02"
+  - "\U0001F1EF\U0001F1F5 日本 NTT 03"
+  - "\U0001F1E6\U0001F1FA 澳大利亚 AWS"
+  - "\U0001F1F2\U0001F1F4 澳门 CTM 01"
+  - "\U0001F1FA\U0001F1F8 美国 Azure"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 01"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 02"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 03"
+  - "\U0001F1FA\U0001F1F8 美国 GIA"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 01"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 02"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 03"
+  - "\U0001F1EC\U0001F1E7 英国 BGP 01"
+  - "\U0001F1EC\U0001F1E7 英国 BGP 02"
+  - "\U0001F1EC\U0001F1E7 英国 Cogent"
+  - "\U0001F1EC\U0001F1E7 英国 NTT"
+  - "\U0001F1F5\U0001F1ED 菲律宾 ETPI"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 01"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 02"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 03"
+  - "\U0001F1F0\U0001F1F7 韩国 KT 01"
+  - "\U0001F1F0\U0001F1F7 韩国 KT 02"
+  - "\U0001F1F0\U0001F1F7 韩国 NTT 01"
+  - "\U0001F1F0\U0001F1F7 韩国 NTT 02"
+  - "\U0001F1F0\U0001F1F7 韩国 NTT 03"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 01"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 02"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 03"
+  - "\U0001F1ED\U0001F1F0 香港 AGA 04"
+  - "\U0001F1ED\U0001F1F0 香港 Azure 01"
+  - "\U0001F1ED\U0001F1F0 香港 Azure 02"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 01"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 02"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 03"
+  - "\U0001F1ED\U0001F1F0 香港 HE 01"
+  - "\U0001F1ED\U0001F1F0 香港 HE 02"
+  - "\U0001F1ED\U0001F1F0 香港 HGC 01"
+  - "\U0001F1ED\U0001F1F0 香港 HGC 02"
+  - "\U0001F1ED\U0001F1F0 香港 HKBN"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 01"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 02"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 03"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 04"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 05"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 06"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 01"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 02"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 03"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 04"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 01"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 02"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 03"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 04"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 05"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 06"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 07"
+  - "\U0001F1ED\U0001F1F0 香港 WTT"
+- name: Auto - UrlTest
+  type: url-test
+  proxies:
+  - "\U0001F1ED\U0001F1F0 As丨香港04丨原生丨中繼"
+  - "\U0001F1ED\U0001F1F0 As丨香港05丨原生丨中繼"
+  - "\U0001F1ED\U0001F1F0 As丨香港08丨原生丨專線"
+  - "\U0001F1FA\U0001F1F8 Na丨美國01丨原生丨中繼"
+  - "\U0001F1FA\U0001F1F8 Na丨美國03丨原生丨中繼"
+  - "\U0001F1FA\U0001F1F8 Na丨美國05丨原生丨中繼"
+  - "\U0001F1FA\U0001F1F8 Na丨美國06丨原生丨中繼"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 01"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 02"
+  - "\U0001F1E8\U0001F1F3 台湾 BGP 03"
+  - "\U0001F1E9\U0001F1EA 德国 BGP 02"
+  - "\U0001F1E9\U0001F1EA 德国 GIA 01"
+  - "\U0001F1E9\U0001F1EA 德国 GIA 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 AGA 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 AGA 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 01"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 02"
+  - "\U0001F1F8\U0001F1EC 新加坡 BGP 03"
+  - "\U0001F1EF\U0001F1F5 日本 AGA 01"
+  - "\U0001F1EF\U0001F1F5 日本 AGA 02"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 01"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 02"
+  - "\U0001F1EF\U0001F1F5 日本 BGP 03"
+  - "\U0001F1F2\U0001F1F4 澳门 CTM 01"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 01"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 02"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 03"
+  - "\U0001F1FA\U0001F1F8 美国 GIA"
+  - "\U0001F1EC\U0001F1E7 英国 BGP 01"
+  - "\U0001F1EC\U0001F1E7 英国 BGP 02"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 01"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 02"
+  - "\U0001F1F0\U0001F1F7 韩国 BGP 03"
+  - "\U0001F1ED\U0001F1F0 香港 Azure 01"
+  - "\U0001F1ED\U0001F1F0 香港 Azure 02"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 01"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 02"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 03"
+  - "\U0001F1ED\U0001F1F0 香港 HE 01"
+  - "\U0001F1ED\U0001F1F0 香港 HE 02"
+  - "\U0001F1ED\U0001F1F0 香港 HGC 01"
+  - "\U0001F1ED\U0001F1F0 香港 HGC 02"
+  - "\U0001F1ED\U0001F1F0 香港 HKBN"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 01"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 02"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 03"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 04"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 05"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 06"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 01"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 02"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 03"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 04"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 01"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 02"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 03"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 04"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 05"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 06"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 07"
+  - "\U0001F1ED\U0001F1F0 香港 WTT"
+  url: http://cp.cloudflare.com/generate_204
+  interval: '3600'
+  tolerance: '150'
+- name: 🇭🇰 香港节点
+  type: url-test
+  proxies:
+  - "\U0001F1ED\U0001F1F0 As丨香港04丨原生丨中繼"
+  - "\U0001F1ED\U0001F1F0 As丨香港05丨原生丨中繼"
+  - "\U0001F1ED\U0001F1F0 As丨香港08丨原生丨專線"
+  - "\U0001F1ED\U0001F1F0 香港 Azure 01"
+  - "\U0001F1ED\U0001F1F0 香港 Azure 02"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 01"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 02"
+  - "\U0001F1ED\U0001F1F0 香港 BGP 03"
+  - "\U0001F1ED\U0001F1F0 香港 HE 01"
+  - "\U0001F1ED\U0001F1F0 香港 HE 02"
+  - "\U0001F1ED\U0001F1F0 香港 HGC 01"
+  - "\U0001F1ED\U0001F1F0 香港 HGC 02"
+  - "\U0001F1ED\U0001F1F0 香港 HKBN"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 01"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 02"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 03"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 04"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 05"
+  - "\U0001F1ED\U0001F1F0 香港 HKT 06"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 01"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 02"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 03"
+  - "\U0001F1ED\U0001F1F0 香港 IEPL 04"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 01"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 02"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 03"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 04"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 05"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 06"
+  - "\U0001F1ED\U0001F1F0 香港 NTT 07"
+  - "\U0001F1ED\U0001F1F0 香港 WTT"
+  url: http://www.gstatic.com/generate_204
+  interval: '3600'
+  tolerance: '150'
+- name: 🇺🇲 美国节点
+  type: url-test
+  proxies:
+  - "\U0001F1FA\U0001F1F8 Na丨美國01丨原生丨中繼"
+  - "\U0001F1FA\U0001F1F8 Na丨美國03丨原生丨中繼"
+  - "\U0001F1FA\U0001F1F8 Na丨美國05丨原生丨中繼"
+  - "\U0001F1FA\U0001F1F8 Na丨美國06丨原生丨中繼"
+  - "\U0001F1FA\U0001F1F8 美国 Azure"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 01"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 02"
+  - "\U0001F1FA\U0001F1F8 美国 BGP 03"
+  - "\U0001F1FA\U0001F1F8 美国 GIA"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 01"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 02"
+  - "\U0001F1FA\U0001F1F8 美国 NTT 03"
+  url: http://www.gstatic.com/generate_204
+  interval: '3600'
+  tolerance: '150'
+rules:
+- RULE-SET,Reject,AdBlock
+- RULE-SET,Special,DIRECT
+- RULE-SET,Netflix,Netflix
+- RULE-SET,Spotify,Spotify
+- RULE-SET,YouTube,YouTube
+- RULE-SET,Disney Plus,Disney
+- RULE-SET,Bilibili,AsianTV
+- RULE-SET,iQiyi,AsianTV
+- RULE-SET,Letv,AsianTV
+- RULE-SET,Netease Music,AsianTV
+- RULE-SET,Tencent Video,AsianTV
+- RULE-SET,Youku,AsianTV
+- RULE-SET,WeTV,AsianTV
+- RULE-SET,ABC,GlobalTV
+- RULE-SET,Abema TV,GlobalTV
+- RULE-SET,Amazon,GlobalTV
+- RULE-SET,Apple News,GlobalTV
+- RULE-SET,Apple TV,GlobalTV
+- RULE-SET,Bahamut,GlobalTV
+- RULE-SET,BBC iPlayer,GlobalTV
+- RULE-SET,DAZN,GlobalTV
+- RULE-SET,Discovery Plus,GlobalTV
+- RULE-SET,encoreTVB,GlobalTV
+- RULE-SET,Fox Now,GlobalTV
+- RULE-SET,Fox+,GlobalTV
+- RULE-SET,HBO,GlobalTV
+- RULE-SET,Hulu Japan,GlobalTV
+- RULE-SET,Hulu,GlobalTV
+- RULE-SET,Japonx,GlobalTV
+- RULE-SET,JOOX,GlobalTV
+- RULE-SET,KKBOX,GlobalTV
+- RULE-SET,KKTV,GlobalTV
+- RULE-SET,Line TV,GlobalTV
+- RULE-SET,myTV SUPER,GlobalTV
+- RULE-SET,Pandora,GlobalTV
+- RULE-SET,PBS,GlobalTV
+- RULE-SET,Pornhub,GlobalTV
+- RULE-SET,Soundcloud,GlobalTV
+- RULE-SET,ViuTV,GlobalTV
+- RULE-SET,Telegram,Telegram
+- RULE-SET,Steam,Steam
+- RULE-SET,Speedtest,Speedtest
+- RULE-SET,PayPal,PayPal
+- RULE-SET,Microsoft,Microsoft
+- RULE-SET,PROXY,Proxy
+- RULE-SET,Apple,Apple
+- RULE-SET,Scholar,Scholar
+- RULE-SET,Domestic,Domestic
+- RULE-SET,Domestic IPs,Domestic
+- RULE-SET,LAN,DIRECT
+- GEOIP,CN,Domestic
+- MATCH,Others
+script:
+  code: |
+    def main(ctx, metadata):
+        port_list = [21, 22, 23, 53, 80, 123, 143, 194, 443, 465, 587, 853, 993, 995, 998, 2052, 2053, 2082, 2083, 2086, 2095, 2096, 5222, 5228, 5229, 5230, 8080, 8443, 8880, 8888, 8889]
+        ruleset_action = {"Reject": "AdBlock",
+            "Special": "DIRECT",
+            "Netflix": "Netflix",
+            "Spotify": "Spotify",
+            "YouTube": "YouTube",
+            "Disney Plus": "Disney",
+            "Bilibili": "AsianTV",
+            "iQiyi": "AsianTV",
+            "Letv": "AsianTV",
+            "Netease Music": "AsianTV",
+            "Tencent Video": "AsianTV",
+            "Youku": "AsianTV",
+            "WeTV": "AsianTV",
+            "ABC": "GlobalTV",
+            "Abema TV": "GlobalTV",
+            "Amazon": "GlobalTV",
+            "Apple News": "GlobalTV",
+            "Apple TV": "GlobalTV",
+            "Bahamut": "GlobalTV",
+            "BBC iPlayer": "GlobalTV",
+            "DAZN": "GlobalTV",
+            "Discovery Plus": "GlobalTV",
+            "encoreTVB": "GlobalTV",
+            "Fox Now": "GlobalTV",
+            "Fox+": "GlobalTV",
+            "HBO": "GlobalTV",
+            "Hulu Japan": "GlobalTV",
+            "Hulu": "GlobalTV",
+            "Japonx": "GlobalTV",
+            "JOOX": "GlobalTV",
+            "KKBOX": "GlobalTV",
+            "KKTV": "GlobalTV",
+            "Line TV": "GlobalTV",
+            "myTV SUPER": "GlobalTV",
+            "Pandora": "GlobalTV",
+            "PBS": "GlobalTV",
+            "Pornhub": "GlobalTV",
+            "Soundcloud": "GlobalTV",
+            "ViuTV": "GlobalTV",
+            "Telegram": "Telegram",
+            "Steam": "Steam",
+            "Speedtest": "Speedtest",
+            "PayPal": "PayPal",
+            "Microsoft": "Microsoft",
+            "PROXY": "Proxy",
+            "Apple": "Apple",
+            "Scholar": "Scholar",
+            "Domestic": "Domestic",
+            "Domestic IPs": "Domestic",
+            "LAN": "DIRECT"
+            }
+        port = int(metadata["dst_port"])
+
+        if port not in port_list:
+            return "DIRECT"
+
+        for rule_name in ctx.rule_providers.keys():
+            if ctx.rule_providers[rule_name].match(metadata):
+                return ruleset_action[rule_name]
+
+        ip = metadata["dst_ip"] or ctx.resolve_ip(metadata["host"])
+
+        if ip == "":
+          return "DIRECT"
+
+        code = ctx.geoip(ip)
+
+        if code == "CN":
+          return "Domestic"
+
+        return "Others"
+rule-providers:
+  Reject:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Reject.yaml
+    path: "./Rules/Reject"
+    interval: 86400
+  Special:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Special.yaml
+    path: "./Rules/Special"
+    interval: 86400
+  Netflix:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Netflix.yaml
+    path: "./Rules/Media/Netflix"
+    interval: 86400
+  Spotify:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Spotify.yaml
+    path: "./Rules/Media/Spotify"
+    interval: 86400
+  YouTube:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/YouTube.yaml
+    path: "./Rules/Media/YouTube"
+    interval: 86400
+  Bilibili:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Bilibili.yaml
+    path: "./Rules/Media/Bilibili"
+    interval: 86400
+  iQiyi:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/iQiyi.yaml
+    path: "./Rules/Media/iQiyi"
+    interval: 86400
+  Letv:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Letv.yaml
+    path: "./Rules/Media/Letv"
+    interval: 86400
+  Netease Music:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Netease%20Music.yaml
+    path: "./Rules/Media/Netease_Music"
+    interval: 86400
+  Tencent Video:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Tencent%20Video.yaml
+    path: "./Rules/Media/Tencent_Video"
+    interval: 86400
+  Youku:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Youku.yaml
+    path: "./Rules/Media/Youku"
+    interval: 86400
+  WeTV:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/WeTV.yaml
+    path: "./Rules/Media/WeTV"
+    interval: 86400
+  ABC:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/ABC.yaml
+    path: "./Rules/Media/ABC"
+    interval: 86400
+  Abema TV:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Abema%20TV.yaml
+    path: "./Rules/Media/Abema_TV"
+    interval: 86400
+  Amazon:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Amazon.yaml
+    path: "./Rules/Media/Amazon"
+    interval: 86400
+  Apple News:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Apple%20News.yaml
+    path: "./Rules/Media/Apple_News"
+    interval: 86400
+  Apple TV:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Apple%20TV.yaml
+    path: "./Rules/Media/Apple_TV"
+    interval: 86400
+  Bahamut:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Bahamut.yaml
+    path: "./Rules/Media/Bahamut"
+    interval: 86400
+  BBC iPlayer:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/BBC%20iPlayer.yaml
+    path: "./Rules/Media/BBC_iPlayer"
+    interval: 86400
+  DAZN:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/DAZN.yaml
+    path: "./Rules/Media/DAZN"
+    interval: 86400
+  Discovery Plus:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Discovery%20Plus.yaml
+    path: "./Rules/Media/Discovery_Plus"
+    interval: 86400
+  Disney Plus:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Disney%20Plus.yaml
+    path: "./Rules/Media/Disney_Plus"
+    interval: 86400
+  encoreTVB:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/encoreTVB.yaml
+    path: "./Rules/Media/encoreTVB"
+    interval: 86400
+  Fox Now:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Fox%20Now.yaml
+    path: "./Rules/Media/Fox_Now"
+    interval: 86400
+  Fox+:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Fox%2B.yaml
+    path: "./Rules/Media/Fox+"
+    interval: 86400
+  HBO:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/HBO.yaml
+    path: "./Rules/Media/HBO"
+    interval: 86400
+  Hulu Japan:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Hulu%20Japan.yaml
+    path: "./Rules/Media/Hulu_Japan"
+    interval: 86400
+  Hulu:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Hulu.yaml
+    path: "./Rules/Media/Hulu"
+    interval: 86400
+  Japonx:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Japonx.yaml
+    path: "./Rules/Media/Japonx"
+    interval: 86400
+  JOOX:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/JOOX.yaml
+    path: "./Rules/Media/JOOX"
+    interval: 86400
+  KKBOX:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/KKBOX.yaml
+    path: "./Rules/Media/KKBOX"
+    interval: 86400
+  KKTV:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/KKTV.yaml
+    path: "./Rules/Media/KKTV"
+    interval: 86400
+  Line TV:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Line%20TV.yaml
+    path: "./Rules/Media/Line_TV"
+    interval: 86400
+  myTV SUPER:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/myTV%20SUPER.yaml
+    path: "./Rules/Media/myTV_SUPER"
+    interval: 86400
+  Pandora:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Pandora.yaml
+    path: "./Rules/Media/Pandora"
+    interval: 86400
+  PBS:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/PBS.yaml
+    path: "./Rules/Media/PBS"
+    interval: 86400
+  Pornhub:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Pornhub.yaml
+    path: "./Rules/Media/Pornhub"
+    interval: 86400
+  Soundcloud:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Soundcloud.yaml
+    path: "./Rules/Media/Soundcloud"
+    interval: 86400
+  ViuTV:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/ViuTV.yaml
+    path: "./Rules/Media/ViuTV"
+    interval: 86400
+  Telegram:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Telegram.yaml
+    path: "./Rules/Telegram"
+    interval: 86400
+  Steam:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Steam.yaml
+    path: "./Rules/Steam"
+    interval: 86400
+  Speedtest:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Speedtest.yaml
+    path: "./Rules/Speedtest"
+    interval: 86400
+  PayPal:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/PayPal.yaml
+    path: "./Rules/PayPal"
+    interval: 86400
+  Microsoft:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Microsoft.yaml
+    path: "./Rules/Microsoft"
+    interval: 86400
+  PROXY:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Proxy.yaml
+    path: "./Rules/Proxy"
+    interval: 86400
+  Domestic:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Domestic.yaml
+    path: "./Rules/Domestic"
+    interval: 86400
+  Apple:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Apple.yaml
+    path: "./Rules/Apple"
+    interval: 86400
+  Scholar:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Scholar.yaml
+    path: "./Rules/Scholar"
+    interval: 86400
+  Domestic IPs:
+    type: http
+    behavior: ipcidr
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Domestic%20IPs.yaml
+    path: "./Rules/Domestic_IPs"
+    interval: 86400
+  LAN:
+    type: http
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/LAN.yaml
+    path: "./Rules/LAN"
+    interval: 86400
